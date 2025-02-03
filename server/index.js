@@ -16,7 +16,7 @@ app.use(express.json());
 
 const io = new Server(server, {
   cors: {
-    origin: "https://code-cast-code-editor.vercel.app/",
+    origin: PROCESS.ENV.FRONTEND_UR,
     methods: ["GET", "POST"],
   },
 });
